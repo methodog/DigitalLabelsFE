@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="http://www.vam.ac.uk/apps/map2/130.png" />
+    <link rel="apple-touch-startup-image" href="http://www.vam.ac.uk/apps/map2/startup.png" />
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./static/css/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./static/css/print.css" media="print" />
+    <script type="text/javascript" src="./static/js/jquery.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.hooks.js"></script>
+    <script type="text/javascript" src="./static/js/hammer.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.hammer.js"></script>
+    <title>Chippendale</title>
+</head>
+
+<body>
+
+    
+    <div id="header" class="hi">Touch an object or its label</div>
+
+    <div class="clip">
+        
+        <ul class="carousel" id="img">
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/28/20/282039fba7d43d7a414b78058ea0cf94.jpg" width="222" height="222" data-caption="2006AM0997" data-img-l="./media/cache/56/ab/56ab293cbbaed440dd9ee9182d40b8c2.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/91/fe/91fefeae69e9c4741060a59376c81ffd.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/a4/2a/a42a0ed470eb769417fe533c7a305a41.jpg" width="222" height="222" data-caption="2006AM8207" data-img-l="./media/cache/51/94/5194e17c76ba6098780a0e067bb79bf1.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/2a/be/2abe97d0cdf039589332731f712ed6aa.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/f1/7e/f17ef5237fd0f14d0016dd4f5733ef89.jpg" width="48" height="48" data-caption="2006AM8206" data-img-l="./media/cache/f7/be/f7be06c12ee94330805b9182d34d0ca3.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/89/cb/89cb6ffe918b97bbcf88ac96e5256f53.jpg" width="222" height="222" data-caption="2006AN0403" data-img-l="./media/cache/7c/97/7c97f40cce2324c06a3d3e74f9bd2a99.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/f0/b7/f0b7be5fc71b5da6a4a900f8f954568a.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/df/e0/dfe0bf67a50e7cfddc9f2663b1f96570.jpg" width="48" height="48" data-caption="2006AN0405" data-img-l="./media/cache/d1/3b/d13b56931032e409a821fd99bd903db7.jpg" alt="" />
+                            
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/5d/08/5d08813a8eff213389cb9387ac0edf9d.jpg" width="48" height="48" data-caption="2006AN0404" data-img-l="./media/cache/95/06/95067ad31073edff9bc83cba7a638ed4.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/32/27/3227fa07db3e4c24682411079d2fca5b.jpg" width="222" height="222" data-caption="2006AL3026" data-img-l="./media/cache/e4/e3/e4e33bea4ae73ca61f6e4472f7d470d2.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/09/ef/09ef9f5da5c66434ddf19dab659c17b5.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/ef/3e/ef3e119cbed34adfa5462d5eb96f04be.jpg" width="48" height="48" data-caption="2011EV2830" data-img-l="./media/cache/57/80/5780c5749f70df6d159313451507c2ee.jpg" alt="" />
+                            
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/bf/29/bf297877aaf30c2234a48ae93dc30e9a.jpg" width="48" height="48" data-caption="2006AL3908" data-img-l="./media/cache/6f/8f/6f8f146cbdec13c7a0968ca6f7d539b6.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="home img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/be/e9/bee9f775dfbdeca86e316a77d24b6863.jpg" width="222" height="222" data-caption="2006AM7720" data-img-l="./media/cache/f0/ac/f0ac9d42acdf0b2ce35ed7673e6ebd7f.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/d2/9f/d29f04bea62dceefea51fad7ba44b2a5.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/9b/8c/9b8c36a942e7ee019090cb7651f62af1.jpg" width="48" height="48" data-caption="2006BD4485" data-img-l="./media/cache/7d/d7/7dd79d5587b68c8feaaad13c3e862aac.jpg" alt="" />
+                            
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/30/f6/30f6921169747e573897d638ee0d147f.jpg" width="48" height="48" data-caption="2006AM7721" data-img-l="./media/cache/3e/82/3e82ea2cbccba02e2add757dc9a1b1ef.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/a2/38/a238be3be2cf1166303a5a70a27fe28e.jpg" width="222" height="222" data-caption="2006AM8860" data-img-l="./media/cache/b7/da/b7da584fac0815a87a45b2f811173e86.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/42/82/42820d755f56db0b640fac6f97a00cca.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/96/8a/968a85c6b88d497801e6dc079b97a515.jpg" width="48" height="48" data-caption="2006AT2155" data-img-l="./media/cache/30/d7/30d79e94698ec04249f7f6e406a9f2eb.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/ac/e3/ace37baf2c221c2b98581075863815f6.jpg" width="222" height="222" data-caption="2006AM3408" data-img-l="./media/cache/3c/23/3c230b9f59940fcc8f5693c4727166ca.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/b3/71/b3717e3f06445c377cb1c7e59246db80.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/e7/18/e718758c710df2087c7e262bb5928ab8.jpg" width="48" height="48" data-caption="2006AM3409" data-img-l="./media/cache/a4/b0/a4b02710dec4cadc5aea4c912d2dc69c.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/2d/8f/2d8fdb4a91e552f3c090392938b490cb.jpg" width="222" height="222" data-caption="2006AU2644" data-img-l="./media/cache/1c/7c/1c7ca7d24e6e774efdefa0271fa7afa2.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/98/a0/98a01ba2be21b281a38a4dd2c8ba6f60.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/01/e0/01e05ec4a66753e3f406c5b805e7c71e.jpg" width="48" height="48" data-caption="2006AU2643" data-img-l="./media/cache/7b/40/7b400723c7ad6c33f121c3835ba6fb6b.jpg" alt="" />
+                            
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/59/8a/598aca0dbfa7d523312b57a3fe7dc0c4.jpg" width="48" height="48" data-caption="2006AU2642" data-img-l="./media/cache/69/6d/696d8e3013c0b5843223fa1a8fb8dce1.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+            <li class="img obj">
+                <div class="mask"></div>
+                <div class="case">
+                    
+                    
+                    <img class="active" src="./media/cache/30/49/3049ec32c4251999b75e0b96f9fcc0a5.jpg" width="222" height="222" data-caption="2006AM0994" data-img-l="./media/cache/24/24/242411342e9644bd3dc2b7f80eb3a462.jpg" alt="" />
+                    
+                    
+                    <img class="inactive" src="./media/cache/2e/aa/2eaab52b07ffc1fe938292cff936d8fc.jpg" width="128" height="128" alt="" />
+                    
+                    
+                    <div class="zoom"></div>
+                </div>
+                
+                <div class="thumbs">More images<br />
+                    
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/8f/d5/8fd526e3d632757b70c9f7c1df137ee6.jpg" width="48" height="48" data-caption="2006AM2740" data-img-l="./media/cache/3d/64/3d64fb73a2aafcd182e5538c104512a1.jpg" alt="" />
+                            
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/f6/ca/f6ca3a51c1437f2e7b0622fd5f27418f.jpg" width="48" height="48" data-caption="2006AM2739" data-img-l="./media/cache/b7/cf/b7cfba73fc6d5152dd27e47bda32df3a.jpg" alt="" />
+                            
+                        
+                    
+                        
+                            
+                            <img src="./media/cache/91/6a/916a804eccd55dcfd6e74c3cf8686de3.jpg" width="48" height="48" data-caption="2006AM2738" data-img-l="./media/cache/02/35/0235aba11a59e008b51fb508648fd044.jpg" alt="" />
+                            
+                        
+                    
+                </div>
+                
+            </li>
+            
+        </ul>
+        
+        <ul class="carousel" id="txt">
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Mirror</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1762-1765 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                London<br/>
+                                Chippendale, Thomas (senior)
+                            </p>
+                            <p>Carved and gilded pine, mirror glass and brass</p>
+                            <p>
+                                
+                                <em>Museum no. 2388-1855</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane">British Galleries:
+This mirror frame is very close to some of Chippendale's published designs. It may have been made in his workshop, or by another highly-skilled carver taking ideas from his designs. Carvers routinely varied details of a design as they worked. In his notes to another design, Chippendale advised that 'A skilful Carver may, in the Execution of this and the following Designs, give full Scope to his Capacity'.</div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Corner cupboard</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1768-1778 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                London<br/>
+                                Chippendale, Thomas (Sr)
+                            </p>
+                            <p>soft&#8209;wood, with painted decoration</p>
+                            <p>
+                                Acquired through the generosity of H. E. Trevor, Esq., with the co&#8209;operation of some admirers of David Garrick<br/>
+                                <em>Museum no. W.24:1, 2-1917</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane"></div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Bureau dressing table</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1771-1775 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                London<br/>
+                                Chippendale, Haig and Co.
+                            </p>
+                            <p>Marquetry of rosewood, tulipwood and other woods, on a carcase of pine, oak and mahogany</p>
+                            <p>
+                                Given by Mr Frank Partridge through The Art Fund<br/>
+                                <em>Museum no. W.55:1 to 22-1928</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane">British Galleries:
+Chippendale's reputation had been established by the quality of his carved furniture in the Rococo style. In the 1760s, Chippendale was quick to develop a new, Neo-classical decoration, using marquetry or paint.</div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>The Garrick Bed (Bed)</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                ca. 1775 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                London<br/>
+                                Chippendale, Thomas (Senior)
+                            </p>
+                            <p>Japanned (painted) beech and pine</p>
+                            <p>
+                                Given by H. E. Trevor, a direct descendant of David Garrick's brother, George<br/>
+                                <em>Museum no. W.70-1916</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane"></div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="home txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Breakfast table</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1754-1770 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                <br/>
+                                Chippendale, Thomas (senior)
+                            </p>
+                            <p>Mahogany</p>
+                            <p>
+                                Gift of Brigadier W. E. Clark CMG, DSO through The Art Fund<br/>
+                                <em>Museum no. W.64:1 to 3-1950</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane">British Galleries:
+This table follows a design published by Chippendale in 1754. In 1756 another London cabinet-maker supplied a version of the design for Dumfries House in Scotland, three years before Chippendale's own firm supplied one.</div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Clothes press</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1775-1778 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                London<br/>
+                                Chippendale, Thomas (senior)
+                            </p>
+                            <p>Japanned (painted) pine</p>
+                            <p>
+                                Acquired through the generosity of H. E. Trevor, Esq., with the co&#8209;operation of some admirers of David Garrick<br/>
+                                <em>Museum no. W.22:1 to 8-1917</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane">British Galleries:
+This was one of a pair of clothes presses in Garrick's dressing room in his villa at Hampton, near London. This one is fitted with shelves and a hanging cupboard with pegs.  A door in the side conceals a set of drawers with a secret drawer.</div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Chair</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1754-1780 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                England<br/>
+                                Chippendale, Thomas (senior)
+                            </p>
+                            <p>Carved mahogany</p>
+                            <p>
+                                Bequeathed by Miss Amy E. Tomes<br/>
+                                <em>Museum no. W.65-1940</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane">British Galleries:
+This was the most copied of all Chippendale's chair designs. Many versions were made by furniture makers throughout Britain and overseas, in a wide range of qualities. Without evidence from bills and inventories it is impossible to date such chairs closely. We know that workshops were producing chairs of this pattern more than 30 years after the 'Director' was published. The video nearby shows this chair in detail and its relationship to Chippendale's design.</div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Cabinet bedstead</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                1768-1770 (made)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                London<br/>
+                                Chippendale, Thomas (Sr)
+                            </p>
+                            <p>Carved and painted pine, with mirror glass and brass handles</p>
+                            <p>
+                                Given by Mr H. E. Trevor, with the co&#8209;operation of some admirers of David Garrick<br/>
+                                <em>Museum no. W.21:1 to 8-1917</em>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane"></div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="txt obj">
+                <div class="mask"></div>
+                <div class="title"><h2>Armchair</h2></div>
+                <div class="row">
+                    <div class="txtl edged col">
+                        <div class="pane">
+                            <p>
+                                <strong>
+                                ca. 1760 (made)ca. 1740-ca. 1750 (embroidered)<br/>
+                                </strong>
+                            </p>
+                            <p>
+                                England<br/>
+                                Chippendale, Thomas (senior)
+                            </p>
+                            <p>Carved mahogany; the embroidery re&#8209;used on this chair</p>
+                            <p>
+                                Gift of Brigadier W. E. Clark CMG, DSO through The Art Fund<br/>
+                                <em>Museum no. W.16-1956</em>
+                            </p>
+                        </div>
+                        
+                        <div class="bot col">
+                            <div class="pane">
+                                <p class="artfund"><img src="./static/img/logo-artfund.png" alt="ArtFund"/></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="txtr col">
+                        <div class="pane"><p>ARMCHAIR ENGLISH; about 1760 Carved mahogany with contemporary tent-stitch embroidery. Given by Brigadier W.E. Clark, C.M.G., D.S.O., through the National Art-Collections Fund.</p></div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+        
+    </div>
+    
+    <div class="pop" id="imgpop"><div class="case" id="imgbox"><img id="imgbig" src="" alt="" /><div class="zoom"></div></div><div id="imgtxt"></div></div>
+    <div class="txt pop" id="txtpop"></div>
+    
+    
+    
+        <div id="timeout">
+            
+            <img class="timeout" src="./media/labels/images/2006AM0997.jpg" alt=""/>
+            
+            <img class="timeout" src="./media/labels/images/2006AM3409.jpg" alt=""/>
+            
+        </div>
+    
+
+</body>
+</html>
