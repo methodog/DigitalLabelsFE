@@ -44,7 +44,6 @@ jQuery(document).ready(function() {
     $('#img, #txt').on('click', 'li:not(.active)', function(){
         var i = $(this).index();
         $('#img, #txt').each(function(){ this.hit(i); });
-        _gaq.push(['_trackEvent', 'Digital Labels (Furniture)', $(document).title, "Carousel Choice"]);
     });
     $('#img, #txt').children('li').each(function(){
         $(this).hammer({css_hacks:false, swipe:false, tap_double:false, hold:false}).on('dragstart', function(e){
@@ -54,14 +53,14 @@ jQuery(document).ready(function() {
                 if( li.is('.active') ){
                     $('#img, #txt').each(function(){
                         var d = (a<60? 1:-1);
-                        var n = li.index()-d;
-                        if( n>-1 && n<$(this).children('li').length ){ this.hit(n); }
+                        var n = li.index() - d;
+                        if( n>-1 && n<$(this).children('li').length){
+                            this.hit(n);
+                        }
                     });
                 }else{
                     $('#img, #txt').each(function(){ this.hit($(li).index()); });
                 }
-               _gaq.push(['_trackEvent', 'Digital Labels (Furniture)', $(document).title, "Swipe"]);
-               _gaq.push(['_trackEvent', 'Digital Labels (Furniture)', $(document).title, "Carousel Choice"]);
             }
         }).on('transform', function(e){
             if( $(this).is('.active') && e.scale>1 ){ $(this).trigger('click'); }
@@ -69,15 +68,13 @@ jQuery(document).ready(function() {
     });
 
     $('#img').on('click', '.active', function(e){
-        e.stopPropagation();
-        var $pip = (e.target.tagName.toLowerCase()==='img')? $(e.target) : $(this).find('img'),
+        var pip = (e.target.tagName.toLowerCase()==='img')? e.target : $(this).find('img').get(0),
             l = ($(window).width()-$('#imgpop').outerWidth())/2;
         l = l>0? l:0;
         $('#imgbig').remove();
-        $('#imgbox').prepend('<img id="imgbig" src="'+ $pip.data('img-l') +'" alt=""/>');
-        $('#imgtxt').html($pip.data('caption'));
+        $('#imgbox').prepend('<img id="imgbig" src="'+ $(pip).data('img-l') +'" alt=""/>');
+        $('#imgtxt').html(pip.title);
         $('#imgpop').css('left',l).show().mouseTrap({'mask':1});
-        _gaq.push(['_trackEvent', 'Digital Labels', $(document).title, $pip.is('.active')?'Image Pop-up':'Secondary Image Pop-up']);
     });
 
     $('#txt').on('click', '.active', function(){
@@ -85,7 +82,6 @@ jQuery(document).ready(function() {
         l = l>0? l:0;
         $('#txtpop').removeClass('home').html($(this).html()).css('left',l).show().mouseTrap({'mask':1});
         if( $(this).hasClass('home') ){ $('#txtpop').addClass('home'); }
-        _gaq.push(['_trackEvent', 'Digital Labels', $(document).title, 'Text Pop-up']);
     });
 
     $('.pop').hammer({css_hacks:false, swipe:false, tap_double:false, hold:false}).on('click transform', function(e){
@@ -116,6 +112,7 @@ jQuery(document).ready(function() {
             $(this).show();
             $('#img').get(0).reset();
             if( $(this).children('img').length>1 ){ t = setTimeout(function(){ to.flick(); }, e); }
+            $('html').css({'cursor':'none'});
         };
         this.flick = function(){
             $(this).append($(this).children(':first-child').css({'opacity':0}).animate({'opacity':1}, 1000));
@@ -125,9 +122,10 @@ jQuery(document).ready(function() {
             clearTimeout(t);
             $(this).hide();
             t = setTimeout(function(){ to.init(); }, d);
+            $('html').css({'cursor':'default'});
         };
         $(window).on('mousedown', function(e){ to.reset(); e.preventDefault(); });
-        $('html').css({'cursor':'none'});
+        
         this.init();
     });
 
