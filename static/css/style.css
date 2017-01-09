@@ -1,0 +1,79 @@
+.row { clear:both; display:block; margin:0 0 0.75em; }
+.nomrg { margin:0; }
+.col { display:block; float:left; width:49.8%; }
+.pane { padding:0 0 0 0.5em; }
+.edged.col { border-right:1px solid #b5b5b5; }
+.edged.col>.pane { padding:0 0.5em 0 0; }
+.multicolumn {
+	-moz-column-count: 2;
+	-moz-column-gap: 0.5em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0.5em;
+	column-count: 2;
+	column-gap: 0.5em;
+	-moz-column-rule: 1px solid #b5b5b5;
+	-webkit-column-rule: 1px solid #b5b5b5;
+	column-rule: 1px solid #b5b5b5;
+}
+
+.timeout { height:auto; width:100%; position:absolute; top:0; left:0; z-index:1; }
+#header { background-color:#007d93; color:#fff; line-height:28px; text-align:center; }
+.clip { overflow:hidden; }
+.carousel { clear:both; margin:0; position:relative; }
+#img { height:326px; }
+.portal .obj { border:none; }
+.obj { border:1px solid #b5b5b5; display:block; float:left; list-style-type:none; margin:0 12px; position:relative; vertical-align:top; }
+.img { top:93px; }
+.portal li.active.img.obj { border:1px solid #000; border-top:none; }
+.case { background:#fff url(img/spinner.gif) 50% 50% no-repeat; display:block; position:relative; text-align:center; }
+.case>img.active { display:none; }
+.portal .thumbs { position:relative; background-color: #fff; width:217px; bottom:0; margin-top:2px; }
+.thumbs { display:none; font-size:0.9em; overflow:hidden; padding:0 0 4px 5px; text-align:left; width:125%; position:absolute; bottom:-74px; }
+.thumbs>img { border:1px solid #b5b5b5; float:left; margin:3px 4px 0 0; }
+.active.img { border-top:0; margin:0 17px; top:0; }
+.active.home.img { border-width:0 2px 2px; margin:0 16px; }
+.active.home.img, .active.home>.thumbs { border-color:#007d93; }
+.active>.case>img { display:block; }
+.active>.case>img.inactive { display:none; }
+.active>.thumbs { display:block; }
+.active .thumb_title { display:none; }
+.thumb_title { position:absolute; top:-1.3em; left:-1px; color:#fff; }
+.txt { background:#fff; border:1px solid #b5b5b5; padding:10px 16px 16px; width:508px; }
+.title { border-bottom:1px solid #b5b5b5; padding:0 0 6px; margin:0 0 10px; }
+.txtl, .txtr { height:317px; }
+.txtr { font-size:114%; line-height:122%; }
+.bot, .zoom { bottom:0; position:absolute; }
+.bot>.pane { padding:0 40px 0 0; }
+.mask { background:#292728; height:100%; opacity:0.5; left:0; position:absolute; top:0; width:100%; z-index:1; }
+.home.txt { background:#007d93; color:#fff; }
+.home.txt .edged.col, .home.txt .title { border-color:#fff; }
+.pop { display:none; border:0; overflow:hidden; position:absolute; top:121px; z-index:1; }
+.pop>.mask { display:none!important; }
+.zoom { background:url(img/zoomin.png) 50% 50% no-repeat; display:none; height:22px; margin:10px; right:0; width:22px; }
+.pop .zoom { background-image:url(img/zoomout.png); height:32px; width:32px; }
+li.img .zoom { margin:4px; }
+.active .zoom, .pop .zoom { display:block; }
+li.home.txt .zoom { background-image:url(img/zoomin_ht.png); }
+.home .artfund>img, #txtpop .artfund>img { visibility:hidden; }
+.home .artfund { background:url(img/logo-artfund-w.png) 0 0 no-repeat; }
+#txtpop .artfund { background:url(img/logo-artfund-l.png) 0 0 no-repeat; }
+#txtpop.home .artfund { background-image:url(img/logo-artfund-w-l.png); }
+#txtpop.home .zoom { background-image:url(img/zoomout_ht.png); }
+#imgbox { border:0; height:542px; width:542px; }
+#imgtxt { background:#6b6a6f; color:#fff; display:table-cell; height:77px; padding:0 12px; vertical-align:middle; width:518px; }
+#txtpop { font-size:156%; padding:15px 24px 24px; width:794px; }
+#txtpop .txtl, #txtpop .txtr { height:523px; }
+
+#mousetrap { height:100%; left:0; position:absolute; top:0; width:100%; z-index:1; }
+#mousetrap.mask { background:#292728; opacity:0.9; }
+
+#index { margin:0 10px; }
+#index li { border:1px solid #b5b5b5; display:inline-block; list-style-type:none; margin:0 5px 5px 0; padding:10px; text-align:center; }
+
+@media screen and (max-height:710px) {
+    .pop { top:28px; }
+}
+@media screen and (max-height:650px) {
+    .pop .zoom { background-color:#fff; border:1px solid #b5b5b5; border-radius:5px 5px 5px 5px; bottom:10px; padding:4px; position:fixed; right:10px; }
+    #txtpop.home .zoom { background-color:#007d93; border-color:#fff; }
+}
